@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Saved Articles</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Eagle+Lake|Handlee" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div id="primary">
+        <p>LandScraper News-- the latest headlines in horticulture</p>
+    </div>
+
+    <div id="secondary">
+        <a id="headerButton" href="../html/index.html" role="button" class="btn btn-primary btn-lg btn-block">Return
+            home</a>
+    </div>
+
+    <div id="saved" class="card" style="display: block">
+        <p class="card-header">Your saved articles:</p>
+        <div id="savedArticlesDiv" class="card-body">
+            <ol id="savedArticles"></ol>
+        </div>
+    </div>
+
+    <div id="notes" class="card" style="display: none">
+        <div id="notesHeader">
+            <p class="card-header" style="display: inline-flex">Article Notes:</p>
+            <button id="hideNotes" style="display: inline-flex">Back to Saved Articles</button>
+        </div>
+        <div id="savedArticleNotesDiv" class="card-body">
+            <ul id="savedArticleNotes"></ul>
+        </div>
+        <div class="input-group">
+            <input id="noteTextInput" type="text" class="form-control" placeholder="Add new note"
+                aria-label="Add new note with two button addons" aria-describedby="button-addon4">
+            <div class="input-group-append" id="button-addon4">
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script type="text/javascript" src="../js/save.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+</html>
