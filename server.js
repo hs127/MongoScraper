@@ -20,7 +20,7 @@ require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
 
 
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/ScrapeArticle";
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://user:password1@ds037997.mlab.com:37997/heroku_20tztjz0";
 
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
 

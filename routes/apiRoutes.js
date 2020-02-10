@@ -1,5 +1,4 @@
 const request = require("request");
-const mongoose = require('mongoose');
 const cheerio = require("cheerio");
 const db = require("../models");
 
@@ -8,9 +7,9 @@ module.exports = function (app) {
     app.get('/articles', function (req, res) {
         request("https://www.nytimes.com/section/world", function (error, response, html) {
 
-            const $ = cheerio.load(html);
+            var $ = cheerio.load(html);
 
-            const results = [];
+            var results = [];
 
             $("div.css-1l4spti").each(function (i, element) {
                 //             pushing title and link of the article into results array from NYT times
